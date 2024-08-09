@@ -21,10 +21,10 @@ CREATE TABLE aluno (
 Armazena informações sobre os professores.
 ```
 CREATE TABLE professor (
-    id_professor      INTEGER PRIMARY KEY,
-    nome_professor    VARCHAR (30),
+    id_professor        INTEGER PRIMARY KEY,
+    nome_professor      VARCHAR (30),
     sobrenome_professor VARCHAR (30),
-    titulação         VARCHAR (20)
+    titulação           VARCHAR (20)
 );
 ```
 ### Tabela curso
@@ -67,8 +67,8 @@ Os seguintes comandos SQL são usados para manipular os dados nas tabelas:
 INSERT INTO aluno (id_aluno, nome_aluno, sobrenome_aluno, ra_aluno, email_aluno)
 VALUES 
     (1, 'Diogo', 'Carvalho', 123, 'diogocarva01@gmail.com'),
-    (2, 'Raiane', 'Carvalho', 124, 'raianelopes02@gmail.com'),
-    (3, 'Rodrigo', 'Lopes', 125, 'rocrigocarva01@gmail.com');
+    (2, 'Raiane', 'Lopes', 124, 'raianelopes02@gmail.com'),
+    (3, 'Rodrigo', 'Carvalho', 125, 'rodrigocarva01@gmail.com');
 ```
 ### Atualizar Dados na Tabela aluno
 ```
