@@ -39,8 +39,8 @@ CREATE TABLE disciplina(
 INSERT INTO aluno (id_aluno, nome_aluno, sobrenome_aluno, ra_aluno, email_aluno)
 VALUES 
  (1,'Diogo', 'Carvalho', 123, 'diogocarva01@gmail.com'),
- (2,'Raiane', 'Carvalho', 124, 'raianelopes02@gmail.com'),
- (3,'Rodrigo', 'Lopes', 125, 'rocrigocarva01@gmail.com');
+ (2,'Raiane', 'Lopes', 124, 'raianelopes02@gmail.com'),
+ (3,'Rodrigo', 'Carvalho', 125, 'rodrigocarva01@gmail.com');
 
 UPDATE aluno
 SET email_aluno = 'rodrigocarva01@gmail.com'
