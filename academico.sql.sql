@@ -10,7 +10,7 @@ CREATE TABLE professor (
 	id_professor		INTEGER PRIMARY KEY,
 	nome_professor		VARCHAR (30),
 	sobrenome_professor	VARCHAR (30),
-	titulação				VARCHAR	(20)
+	titulação		VARCHAR	(20)
 	);
 
 CREATE TABLE curso (
@@ -30,8 +30,8 @@ CREATE TABLE matricula(
 CREATE TABLE disciplina(
 	id_disciplina		INTEGER PRIMARY KEY,
 	nome_disciplina		VARCHAR (30),
-	curso_fk 			INTEGER,
-	aluno_fk			INTEGER,
+	curso_fk 		INTEGER,
+	aluno_fk		INTEGER,
 	FOREIGN KEY(curso_fk) REFERENCES curso(id_curso), 
 	FOREIGN KEY(aluno_fk) REFERENCES aluno(id_aluno)
 );
