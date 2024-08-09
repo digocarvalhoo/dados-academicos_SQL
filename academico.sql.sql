@@ -1,15 +1,15 @@
 CREATE TABLE aluno (
-	id_aluno			INTEGER PRIMARY KEY,
+	id_aluno		INTEGER PRIMARY KEY,
 	nome_aluno 	       	VARCHAR (30),
 	sobrenome_aluno		VARCHAR (30),
-	ra_aluno			VARCHAR (20),
-	email_aluno			VARCHAR	(60)
+	ra_aluno		VARCHAR (20),
+	email_aluno		VARCHAR	(60)
 	);
 
 CREATE TABLE professor (
-	id_professor			INTEGER PRIMARY KEY,
-	nome_professor			VARCHAR (30),
-	sobrenome_professor		VARCHAR (30),
+	id_professor		INTEGER PRIMARY KEY,
+	nome_professor		VARCHAR (30),
+	sobrenome_professor	VARCHAR (30),
 	titulação				VARCHAR	(20)
 	);
 
@@ -20,7 +20,7 @@ CREATE TABLE curso (
 	);
 
 CREATE TABLE matricula(
-	id_matricula 	INTEGER PRIMARY KEY,
+	id_matricula 		INTEGER PRIMARY KEY,
 	curso_fk 		INTEGER,
 	aluno_fk		INTEGER,
 	FOREIGN KEY(curso_fk) REFERENCES curso(id_curso), 
