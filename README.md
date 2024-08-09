@@ -110,9 +110,13 @@ WHERE id_aluno = 3;
 ```
 ## Uso
 1.Execute os comandos de criação das tabelas para configurar o banco de dados.
+
 2.Use os comandos de inserção para adicionar dados ao banco de dados.
+
 3.Realize operações de atualização e deleção conforme necessário.
+
 4.Utilize os comandos de seleção para consultar os dados armazenados.
+
 
 
 
