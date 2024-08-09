@@ -1,12 +1,12 @@
-#Gerenciamento de Dados Acadêmicos
+# Gerenciamento de Dados Acadêmicos
 Este repositório contém scripts SQL para criar e manipular um banco de dados de exemplo para o gerenciamento de dados acadêmicos. O banco de dados inclui tabelas para alunos, professores, cursos, matrículas e disciplinas.
 
-##Estrutura do Banco de Dados
+## Estrutura do Banco de Dados
 O banco de dados é composto pelas seguintes tabelas:
 
 O banco de dados é composto pelas seguintes tabelas:
 
-###Tabela aluno
+### Tabela aluno
 Armazena informações sobre os alunos.
 ```
 CREATE TABLE aluno (
@@ -17,7 +17,7 @@ CREATE TABLE aluno (
     email_aluno      VARCHAR (60)
 );
 ```
-###Tabela professor
+### Tabela professor
 Armazena informações sobre os professores.
 ```
 CREATE TABLE professor (
@@ -27,7 +27,7 @@ CREATE TABLE professor (
     titulação         VARCHAR (20)
 );
 ```
-###Tabela curso
+### Tabela curso
 Armazena informações sobre os cursos.
 ```
 CREATE TABLE curso (
@@ -36,7 +36,7 @@ CREATE TABLE curso (
     ano_curso  INTEGER
 );
 ```
-###Tabela matricula
+### Tabela matricula
 Armazena informações sobre as matrículas dos alunos em cursos.
 ```
 CREATE TABLE matricula (
@@ -47,7 +47,7 @@ CREATE TABLE matricula (
     FOREIGN KEY(aluno_fk) REFERENCES aluno(id_aluno)
 );
 ```
-###Tabela disciplina
+### Tabela disciplina
 Armazena informações sobre as disciplinas, incluindo a relação com cursos e professores.
 ```
 CREATE TABLE disciplina (
@@ -59,10 +59,10 @@ CREATE TABLE disciplina (
     FOREIGN KEY(professor_fk) REFERENCES professor(id_professor)
 );
 ```
-##Comandos SQL
+## Comandos SQL
 Os seguintes comandos SQL são usados para manipular os dados nas tabelas:
 
-###Inserir Dados na Tabela aluno
+### Inserir Dados na Tabela aluno
 ```
 INSERT INTO aluno (id_aluno, nome_aluno, sobrenome_aluno, ra_aluno, email_aluno)
 VALUES 
@@ -70,45 +70,45 @@ VALUES
     (2, 'Raiane', 'Carvalho', 124, 'raianelopes02@gmail.com'),
     (3, 'Rodrigo', 'Lopes', 125, 'rocrigocarva01@gmail.com');
 ```
-###Atualizar Dados na Tabela aluno
+### Atualizar Dados na Tabela aluno
 ```
 UPDATE aluno
 SET email_aluno = 'rodrigocarva01@gmail.com'
 WHERE nome_aluno = 'Rodrigo';
 ```
-##Selecionar Dados da Tabela aluno
+## Selecionar Dados da Tabela aluno
 ```
 SELECT *
 FROM aluno;
 ```
-##Inserir Dados na Tabela professor
+## Inserir Dados na Tabela professor
 ```
 INSERT INTO professor (id_professor, nome_professor, sobrenome_professor, titulação)
 VALUES (908, 'Fábio', 'Andrade', 'SQL');
 ```
-##Selecionar Dados da Tabela professor
+## Selecionar Dados da Tabela professor
 ```
 SELECT *
 FROM professor;
 ```
-##Inserir Dados na Tabela curso
+## Inserir Dados na Tabela curso
 ```
 INSERT INTO curso (id_curso, nome_curso, ano_curso)
 VALUES (2014, 'ADS', 7783209),
        (2014, 'Banco de Dados', 6437277);
 ```
-##Atualizar Dados na Tabela professor
+## Atualizar Dados na Tabela professor
 ```
 UPDATE professor 
 SET nome_professor = 'Edson'
 WHERE id_professor = 908;
 ```
-##Deletar Dados da Tabela aluno
+## Deletar Dados da Tabela aluno
 ```
 DELETE FROM aluno
 WHERE id_aluno = 3;
 ```
-##Uso
+## Uso
 1.Execute os comandos de criação das tabelas para configurar o banco de dados.
 2.Use os comandos de inserção para adicionar dados ao banco de dados.
 3.Realize operações de atualização e deleção conforme necessário.
