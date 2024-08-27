@@ -1,9 +1,11 @@
 # Gerenciamento de Dados Acadêmicos
 Este repositório contém scripts SQL para criar e manipular um banco de dados de exemplo para o gerenciamento de dados acadêmicos. O banco de dados inclui tabelas para alunos, professores, cursos, matrículas e disciplinas.
+## Diagrama Entidade-Relacionamento
+
+![DER MAPA](https://github.com/user-attachments/assets/60364fef-479f-4f9c-b07e-7f647798582c)
+
 
 ## Estrutura do Banco de Dados
-O banco de dados é composto pelas seguintes tabelas:
-
 O banco de dados é composto pelas seguintes tabelas:
 
 ### Tabela aluno
